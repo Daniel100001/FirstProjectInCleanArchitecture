@@ -2,5 +2,6 @@
     <string name="app_name">FirstProjectInCleanArchitecture</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name_s_nemail_s_npassword_s">name: %s \nemail: %s \npassword: %s</string>
 
 </resources>

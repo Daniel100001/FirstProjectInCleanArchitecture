@@ -7,6 +7,7 @@ import javax.inject.Inject
 class UserRepositoryImpl @Inject constructor(
     private val preferencesHelper: UserPreferencesHelper
 ): UserRepository {
+
     override fun singUp(name: String, email: String, password: String) {
         preferencesHelper.apply {
             this.name = name

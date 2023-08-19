@@ -1,6 +1,5 @@
 package com.example.firstprojectincleanarchitecture.presentation.ui.fragments.info
 
-import android.widget.Toast
 import androidx.fragment.app.viewModels
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.firstprojectincleanarchitecture.R
@@ -20,10 +19,7 @@ class UserInfo : BaseFragment<FragmentUserInfoBinding, UserInfoViewModel>(R.layo
     private fun getUserInfo() {
         binding.showInfo.setOnClickListener{
             viewModel.userInfo.observe(viewLifecycleOwner){
-                binding.name.text = it[0]
-                binding.email.text = it[1]
-                binding.password.text = it[2]
-                Toast.makeText(requireContext(), it.size.toString(), Toast.LENGTH_SHORT).show()
+                binding.userinfo.text = getString(R.string.name_s_nemail_s_npassword_s, it[0],it[1],it[2])
             }
         }
     }
